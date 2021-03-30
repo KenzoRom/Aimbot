@@ -1,0 +1,21 @@
+#container1 {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 2%;
+}
+
+#container2 {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    font-family: 'Lato', sans-serif;
+}
+
+.explanation {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 5%;
+    font-family: 'Lato', sans-serif;
+}
