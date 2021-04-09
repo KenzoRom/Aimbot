@@ -14,10 +14,24 @@
         <h1 class="header">Kenzo's aimbot calculator</h1>
     </div>
     <div id="container2">
-        <p class="explanation">This site is a tool for calculating the view angle for an aimbot. On the tool itself you have to enter the: x and y position for the enemy
-            and the player. The z is a set value which is head level. With these values you should be able to calculate the angle you should look
-            to hit the enemies head.
+        <p class="explanation">This site is a tool for calculating the view angle in degrees for an aimbot. On the tool itself you have to enter the: x and y position for the enemy, 
+            player and the player view orientation (angle) in degrees. With these values the tool is able to calculate the angle you should look
+            to hit the enemy. North is 0 degrees, South is 180 degrees.
         </p>
     </div>
+    <div id="maincontainer">
+        <div id="container3">
+            <p class="text-for-box">X Player</p><input type="text" id="xPlayer">
+            <p>Y Player</p><input type="text" id="yPlayer">
+            <p>Degrees (Current view angle)</p><input type="text" id="startDegrees">
+        </div>
+        <div id="container4">
+            <p>X Enemy</p><input type="text" id="xEnemy">
+            <p>Y Enemy</p><input type="text" id="yEnemy">
+            <br><br>
+            <button id="calculate">Calculate!</button>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
 </body>
 </html>
