@@ -17,3 +17,19 @@ document.querySelector('#calculate').addEventListener("click", (e) => {
             //const finalDegreeChange = playerStartDegreesConvert - tanInDegrees;
             alert(inverseTan)
 })
+
+
+
+
+
+let x = 39;
+let y = 324;
+let kijkrichting = 23;
+
+let player = document.querySelector(".player");
+if(player){
+    player.style.top = y + "px";
+    player.style.left = x + "px";
+    player.style.transform = "rotate(" + kijkrichting + "deg)";
+    player.style.transform = `rotate(${kijkrichting}deg)`
+}
