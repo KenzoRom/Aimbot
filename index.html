@@ -10,59 +10,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <header>        
      <h1>Kenzo's aimbot calculator</h1>
         <label class="switch">
             <input type="checkbox">
             <span class="slider round"></span>
         </label>
+    
     </header>
-
-    <div class="intro">
-        <p class="explanation">This site is a tool for calculating the view angle in degrees for an aimbot. On the tool itself you have to enter the: x and y position for the enemy, 
-            player and the player view orientation (angle) in degrees. With these values the tool is able to calculate the angle you should look
-            to hit the enemy. North is 0 degrees, South is 180 degrees.
-        </p>
+        <div class="intro">
+            <p class="explanation">This site is a tool for calculating the view angle in degrees for an aimbot. On the tool itself you have to enter the: x and y position for the enemy, 
+                player and the player view orientation (angle) in degrees. With these values the tool is able to calculate the angle you should look
+                to hit the enemy. North is 0 degrees, South is 180 degrees.
+            </p>
+        </div>
+        <main>
+            <div id="container3">
+                <p class="text-for-box">X Player</p><input type="text" id="xPlayer">
+                <p>Y Player</p><input type="text" id="yPlayer">
+                <p>Degrees (Current view angle)</p><input type="text" id="startDegrees">
+            </div>
+            <div id="container4">
+                <p>X Enemy</p><input type="text" id="xEnemy">
+                <p>Y Enemy</p><input type="text" id="yEnemy">
+                <p> &nbsp;</p>
+                <button id="calculate">Calculate!</button>
+            </div>
+            <div class="content">
+                <section class="visuals">
+                    <section class="player">&#129041;</section>
+                    <section class="enemy">😒</section>
+                </section>
+            </div>
+        </main>
     </div>
-    <main>
-        <div id="container3">
-            <p class="text-for-box">X Player</p><input type="text" id="xPlayer">
-            <p>Y Player</p><input type="text" id="yPlayer">
-            <p>Degrees (Current view angle)</p><input type="text" id="startDegrees">
-        </div>
-        <div id="container4">
-            <p>X Enemy</p><input type="text" id="xEnemy">
-            <p>Y Enemy</p><input type="text" id="yEnemy">
-            <p> &nbsp;</p>
-            <button id="calculate">Calculate!</button>
-        </div>
-    </main>
-
-    <style>
-        .visuals{
-            width:800px;
-            height:800px;
-            border:1px solid black;
-            position: relative;
-        }
-
-        .player{
-            position: relative;
-            left:400px;
-            top:400px;
-            font-size: 60pt;
-            transform:rotate(90deg);
-            width:106px;
-            height:106px;
-        }
-
-
-    </style>
-    <section class="visuals">
-        <section class="player">&#129041;</section>
-        <section class="enemy">😒</section>
-    </section>
     <script src="javascript.js"></script>
 </body>
 </html>

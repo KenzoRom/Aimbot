@@ -44,14 +44,14 @@ input, button{
     display: flex;
     justify-content: center;
     padding: 10px;
-    max-width:800px;
+    max-width:418px;
 
 }
 
 main {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
 }
 
 #container3 {
@@ -143,3 +143,25 @@ main {
     100% {transform: rotate(0deg)}
   }
   
+  .visuals{
+    width:800px;
+    height:800px;
+    border:1px solid black;
+    position: relative;
+}
+
+.player{
+    position: relative;
+    left:400px;
+    top:400px;
+    font-size: 60pt;
+    transform:rotate(90deg);
+    width:106px;
+    height:106px;
+}
+
+.content{
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+}
