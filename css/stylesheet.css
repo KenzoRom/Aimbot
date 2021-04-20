@@ -20,6 +20,12 @@ header {
     color:white;
 }
 
+.explanation{
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 800px;
+}
+
 body div{
     background:rgba(0, 0, 0, 0.5);
     margin:8px;
@@ -27,25 +33,17 @@ body div{
     border-radius: 8px;
     color:white;
 }
-body div:hover{
+/*body div:hover{
     background:rgba(0, 0, 0, 0.5);
     color:white;
     animation-name: kenzo;
     animation-duration: 4s;
     
-}
+}*/
 
 input, button{
     padding:5px;
     border-radius: 100px;;
-}
-
-.intro {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    max-width:418px;
-
 }
 
 main {
@@ -57,12 +55,16 @@ main {
 #container3 {
     display: flex;
     flex-direction: column;
+    max-height: 400px;
+    justify-content: space-around;
 
 }
 
 #container4 {
     display: flex;
     flex-direction: column;
+    max-height: 400px;
+    justify-content: space-around;
 
 }
 
@@ -146,7 +148,7 @@ main {
   .visuals{
     width:800px;
     height:800px;
-    border:1px solid black;
+    border:4px solid white;
     position: relative;
 }
 
@@ -161,7 +163,5 @@ main {
 }
 
 .content{
-  display: flex;
-  flex-direction: row-reverse;
-  position: relative;
+  margin-left: auto;
 }
