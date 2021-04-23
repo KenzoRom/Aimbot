@@ -16,7 +16,10 @@ document.querySelector('.calculate').addEventListener("click", (e) => {
             const degreePlayerEnemy = Math.atan2(setGlobalToLocalX, setGlobalToLocalY) * (180 / Math.PI);
             /*if(playerStartDegrees > degreePlayerEnemy){*/
             var totalDegrees = playerStartDegreesConvert - degreePlayerEnemy;
-            alert(totalDegrees);
+            alert(playerStartDegreesConvert + totalDegrees+90);
+            let rot = document.querySelector(".rot");
+            rot.style.transform = "rotate(" + playerStartDegreesConvert+totalDegrees+90 + "deg)";
+
             /*}else
             var totalDegrees = degreePlayerEnemy - playerStartDegreesConvert;
             alert(totalDegrees);*/
@@ -25,7 +28,6 @@ document.querySelector('.calculate').addEventListener("click", (e) => {
 
 /*Deze 3 eventlisteners zorgen ervoor dat de positie van de player + rotation en enemy geset kan worden*/
 document.querySelector('.set-enemy-pos').addEventListener("click", (e) => {
-        
     const enemyXPos = document.querySelector('#xEnemy').value;
     enemyXPosConvert = parseInt(enemyXPos);
     const enemyYPos = document.querySelector('#yEnemy').value;
@@ -34,13 +36,12 @@ document.querySelector('.set-enemy-pos').addEventListener("click", (e) => {
         let yEnemy = enemyYPosConvert * 78;
         let enemy = document.querySelector(".enemy");
         if(enemy){
-            enemy.style.top = xEnemy + "px";
-            enemy.style.left = yEnemy + "px";
+            enemy.style.top = yEnemy + "px";
+            enemy.style.left = xEnemy + "px";
         }
 })
 
-document.querySelector('.set-player-pos').addEventListener("click", (e) => {
-        
+document.querySelector('.set-player-pos').addEventListener("click", (e) => { 
     const playerXPos = document.querySelector('#xPlayer').value;
     playerXPosConvert = parseInt(playerXPos);
     const playerYPos = document.querySelector('#yPlayer').value;
@@ -49,13 +50,12 @@ document.querySelector('.set-player-pos').addEventListener("click", (e) => {
         let yPlayer = playerYPosConvert * 78;
         let player = document.querySelector(".player");
     if(player){
-        player.style.top = xPlayer + "px";
-        player.style.left = yPlayer + "px";
+        player.style.top = yPlayer + "px";
+        player.style.left = xPlayer + "px";
     }
 })
 
-document.querySelector('.set-player-rot').addEventListener("click", (e) => {
-        
+document.querySelector('.set-player-rot').addEventListener("click", (e) => { 
     const playerStartDegrees = document.querySelector('#startDegrees').value;
     playerStartDegreesConvert = parseInt(playerStartDegrees);
     const playerXPos = document.querySelector('#xPlayer').value;
@@ -66,8 +66,8 @@ document.querySelector('.set-player-rot').addEventListener("click", (e) => {
     let yPlayer = playerYPosConvert * 76; 
     let rot = document.querySelector(".rot");
     if(rot){
-        rot.style.top = xPlayer + "px";
-        rot.style.left = yPlayer + "px";
+        rot.style.top = yPlayer + "px";
+        rot.style.left = xPlayer + "px";
         rot.style.transform = "rotate(" + playerStartDegrees + "deg)";
     }
 })
