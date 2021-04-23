@@ -16,7 +16,6 @@ document.querySelector('.calculate').addEventListener("click", (e) => {
         const degreePlayerEnemy = Math.atan2(setGlobalToLocalX, setGlobalToLocalY) * (180 / Math.PI);
         var totalDegrees = 0 - degreePlayerEnemy;
         alert((totalDegrees + 180) - playerStartDegreesConvert);
-        debugLoop();
         let rot = document.querySelector(".rot");
         rot.style.transform = "rotate("+(totalDegrees + 180) + "deg)";
 })
@@ -68,10 +67,10 @@ document.querySelector('.set-player-rot').addEventListener("click", (e) => {
 })
 
 //Debug loop
-function debugLoop(){
+/*function debugLoop(){
     for(let i = 0; i < 3; i++){
         console.log(playerStartDegreesConvert);
         console.log(degreePlayerEnemy);
         console.log(totalDegrees);
     }
-}
+}*/
