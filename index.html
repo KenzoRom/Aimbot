@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aimbot calculator</title>
-    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
 </head>
@@ -18,26 +18,128 @@
         </label>
     </header>
     <main>
-        <div class="explanation">This site is a tool for calculating the view angle in degrees for an aimbot. On the tool itself you have to enter the: x and y position for the enemy, 
-            player and the player view orientation (angle) in degrees. With these values the tool is able to calculate the angle you should look
-            to hit the enemy. North is 0 degrees, South is 180 degrees.
-    </div>
-        <div id="container3">
-            <p class="text-for-box">X Player</p><input type="text" id="xPlayer">
-            <p>Y Player</p><input type="text" id="yPlayer">
-            <p>Degrees (Current view angle)</p><input type="text" id="startDegrees">
+        <div class="intro">This site is a tool for calculating the view angle in degrees for an aimbot. On the tool itself you have to enter the: x and y position for the enemy, 
+                player and the player view orientation (angle) in degrees. With these values the tool is able to calculate the angle you should look
+                to hit the enemy. North is 0 degrees, South is 180 degrees.
         </div>
-        <div id="container4">
-            <p>X Enemy</p><input type="text" id="xEnemy">
-            <p>Y Enemy</p><input type="text" id="yEnemy">
-            <p> &nbsp;</p>
-            <button id="calculate">Calculate!</button>
-        </div>
-        <div class="content">
-            <section class="visuals">
-                <section class="player">&#129041;</section>
-                <section class="enemy">😒</section>
-            </section>
+            <div class="input-field">
+                <p class="text-for-box">X Player</p><input type="text" id="xPlayer">
+                <p>Y Player</p><input type="text" id="yPlayer">
+                <p>Degrees (Current view angle)</p><input type="text" id="startDegrees">
+                <p>X Enemy</p><input type="text" id="xEnemy">
+                <p>Y Enemy</p><input type="text" id="yEnemy">
+            </div>
+                <section class="visuals">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <section class="rot">⬆️</section>
+                    <section class="enemy">😒</section>
+                    <section class="player">😎</section>
+                    
+                </section>
+        <div class="calc-btn">
+            <p class="set-player-pos">Set Player Position</p>
+            <p class="set-player-rot">Set Player Rotation</p>
+            <p class="set-enemy-pos">Set Enemy Position</p>
+            <p class="calculate">Calculate!</p>
         </div>
     </main>
     <script src="javascript.js"></script>
